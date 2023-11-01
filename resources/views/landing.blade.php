@@ -1,0 +1,11 @@
+<x-layouts.landing>
+    @include('partials.welcome.hero')
+    <main>
+        @include('partials.welcome.about')
+        @include('partials.welcome.news')
+        @include('partials.welcome.subscribe')
+        @include('partials.welcome.gallery')
+        @include('partials.welcome.services')
+        @include('partials.welcome.footer')
+    </main>
+</x-layouts.landing>

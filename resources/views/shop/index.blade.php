@@ -1,0 +1,9 @@
+<x-layouts.shop>
+    @include('partials.shop.index.hero')
+    @include('partials.shop.index.featured')
+    @include('partials.shop.index.on-sale')
+    @include('partials.welcome.subscribe')
+    @include('partials.shop.index.categories')
+    @include('partials.shop.index.contact-us')
+    @include('partials.welcome.footer')
+</x-layouts.shop>
