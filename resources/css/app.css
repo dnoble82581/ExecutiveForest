@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        --accent-orange: 179 81 72;
+        --accent-red: 168 42 68;
+        --accent-blue: 34 131 168;
+        --accent-white: 243 248 255;
+        --accent-gray: 161 168 179;
+        --accent-green: 81 196 167;
+
+        --tertiary-green: 27 181 140;
+        --tertiary-white: 224 223 220;
+        --tertiary-black: 53 56 57;
+
+        --primary-green: 27 167 131;
+        --secondary-green: 0 108 81;
+
+        --primary-black: 36 43 43;
+        --secondary-black: 59 68 75;
+
+        --primary-white: 250 249 246;
+        --secondary-white: 255 255 255;
+    }
+
+    html{
+        font-family: Roboto, system-ui, sans-serif;
+    }
+}
