@@ -2,7 +2,7 @@
     <div class="bg-primaryBlack flex items-center justify-between px-8">
         <div>
             <a href="/">
-                Logo
+                <x-application-logo class="w-28 h-24"/>
             </a>
         </div>
         <div>

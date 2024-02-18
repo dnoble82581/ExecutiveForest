@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ProductController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
@@ -15,7 +16,15 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('welcome',[
+        'featured' => \App\Models\Product::all()->take(3),
+        'sale' => \App\Models\Product::all()->take(4),
+    ]);
+});
+
+Route::controller(ProductController::class)->group(function () {
+    Route::get('/products', 'index')->name('products');
+    Route::get('/product/{product:slug}', 'show')->name('product');
 });
 
 Route::get('/dashboard', function () {

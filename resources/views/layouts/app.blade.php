@@ -19,7 +19,7 @@
     @livewireStyles
 </head>
 
-<body class="antialiased bg-secondaryWhite">
+<body class="antialiased bg-primaryWhite">
     <main>
         {{ $slot }}
     </main>

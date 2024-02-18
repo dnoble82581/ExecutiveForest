@@ -10,9 +10,9 @@
 
         <article>
             <div class="grid grid-cols-3 gap-5 px-8 mt-8">
-                <x-product_card/>
-                <x-product_card/>
-                <x-product_card/>
+                @foreach($featured as $feature)
+                    <x-cards.product_card :product="$feature"/>
+                @endforeach
             </div>
         </article>
     </header>

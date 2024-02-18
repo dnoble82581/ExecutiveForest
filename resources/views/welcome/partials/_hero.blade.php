@@ -18,7 +18,7 @@
             <h1 class="text-primaryWhite text-5xl">Shop <span class="text-primaryGreen">Executive</span> Forest</h1>
             <p class="text-primaryWhite text-lg mt-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad
                                                       debitis eaque enim</p>
-            <a class="bg-primaryGreen px-6 text-lg uppercase inline-block mt-3 text-primaryWhite rounded-lg py-2" href="#">Shop All</a>
+            <x-links.big_link href="{{ route('products') }}" class="inline-block mt-4">Shop All</x-links.big_link>
         </div>
     </div>
 </section>

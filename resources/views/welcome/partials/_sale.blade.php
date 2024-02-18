@@ -4,9 +4,9 @@
         <p class="max-w-3xl mx-auto mt-2 text-sm text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad amet asperiores at debitis eaque eos in ipsam iste, iusto laboriosam magni odio possimus, recusandae sunt ullam? In maxime sit veniam.</p>
     </header>
     <div class="grid grid-cols-4 gap-5 px-8 mt-8">
-        <x-product_card/>
-        <x-product_card/>
-        <x-product_card/>
-        <x-product_card/>
+        @foreach($sale as $product)
+            <x-cards.product_card :product="$product"/>
+        @endforeach
+
     </div>
 </section>

@@ -1,15 +1,15 @@
 <?php
 
-namespace App\View\Components;
+namespace App\View\Components\Cards;
 
 use App\Models\Product;
 use Illuminate\Contracts\View\View;
 use Illuminate\View\Component;
 
-class Product_card extends Component
+class Feature_card extends Component
 {
     /**
-     * The product.
+     * The alert type.
      *
      * @var Product
      */
@@ -28,6 +28,6 @@ class Product_card extends Component
 
     public function render():View
 	{
-		return view('components.product_card');
+		return view('components.cards.feature_card');
 	}
 }

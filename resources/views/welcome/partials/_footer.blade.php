@@ -51,7 +51,7 @@
     </div>
     <div class="flex justify-center">
         <a href="/">
-            <x-icons.logo class="w-28 h-28"/>
+            <x-application-logo class="w-28 h-28"/>
         </a>
     </div>
     <p class="text-sm text-primaryWhite text-center pb-6">&#169; Executive Forest, All Rights Reserved. <a href="#">Terms</a>, <a href="#">Privacy</a> & <a href="#">Accessibility</a></p>
