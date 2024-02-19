@@ -1,6 +1,6 @@
 <div class="max-w-lg bg-white border border-gray-200 rounded-lg shadow p-3 hover:bg-gray-200 transition-colors ease-in-out">
     <a href="{{ route('product', $product) }}">
-            <img class="rounded-lg" src="{{ $product->images->first()->image ?? '' }}" alt="" />
+            <img class="rounded-lg" src="{{ $product->images->first()->image }}" alt="" />
     </a>
     <div class="p-5">
         <a href="{{ route('product', $product) }}">

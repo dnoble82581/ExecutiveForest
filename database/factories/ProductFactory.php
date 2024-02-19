@@ -25,11 +25,13 @@ class ProductFactory extends Factory
             'price' => fake()->randomFloat(2, 1, 200),
             'sale_price' => fake()->randomFloat(2, 1, 200),
             'quantity' => fake()->randomFloat(0, 1, 10),
-            'status' => fake()->randomFloat(0, 1, 2),
-            'on_sale' => fake()->randomFloat(0, 1, 2),
+            'status' => fake()->randomFloat(0, 0, 1),
+            'on_sale' => fake()->randomFloat(0, 0, 1),
             'meta_title' => fake()->sentence,
             'meta_keyword' => fake()->sentence,
             'meta_description' => fake()->paragraph,
+            'sku' => fake()->randomFloat(0, 1000, 20000),
+            'dimensions' => '.5" X 5" X 6"',
         ];
     }
 }

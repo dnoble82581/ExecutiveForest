@@ -14,18 +14,23 @@ class Product extends Model
 
     protected $fillable = [
         'name',
-        'slug',
-        'long_description',
-        'short_description',
-        'material_finish',
         'price',
         'sale_price',
         'quantity',
         'status',
         'on_sale',
+
+        'slug',
+        'dimensions',
+        'sku',
+
+        'long_description',
+        'short_description',
+        'material_finish',
+
         'meta_title',
         'meta_keyword',
-        'meta_description'
+        'meta_description',
     ];
 
     public function images():HasMany{

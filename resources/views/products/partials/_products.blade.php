@@ -40,9 +40,15 @@
 {{--            </ul>--}}
 {{--        </div>--}}
 {{--    </aside>--}}
-    <div class="grid grid-cols-3 gap-3 h-fit mt-5 px-8">
-        @foreach($products as $product)
-            <x-cards.product_card :product="$product"/>
-        @endforeach
-    </div>
+        @if(count($products))
+            <div class="grid grid-cols-3 gap-3 h-fit mt-5 px-8">
+            @foreach($products as $product)
+                <x-cards.product_card :product="$product"/>
+            @endforeach
+            </div>
+        @else
+            <div class="mt-10">
+                <p class="text-center text-4xl text-gray-400">Nothing yet. Check back soon!</p>
+            </div>
+        @endif
 

@@ -12,6 +12,11 @@
                     {{ __("You're logged in!") }}
                 </div>
             </div>
+            <a href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                Logout
+            </a>
+            <form id="logout-form" action="{{ route('logout') }}" method="post" class="invisible">@csrf</form>
+            <a class="inline-block mt-5" href="{{ route('create_product') }}">Create Product</a>
         </div>
     </div>
 </x-app-layout>

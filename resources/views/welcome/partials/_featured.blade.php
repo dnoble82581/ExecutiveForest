@@ -9,11 +9,17 @@
                                                                       Animi dolorem inventore nemo.</p>
 
         <article>
-            <div class="grid grid-cols-3 gap-5 px-8 mt-8">
-                @foreach($featured as $feature)
-                    <x-cards.product_card :product="$feature"/>
-                @endforeach
-            </div>
+            @if(count($featured))
+                <div class="grid grid-cols-3 gap-5 px-8 mt-8">
+                    @foreach($featured as $feature)
+                        <x-cards.product_card :product="$feature"/>
+                    @endforeach
+                </div>
+            @else
+                <div class="mt-10">
+                    <p class="text-center text-4xl text-gray-400">Nothing yet. Check back soon!</p>
+                </div>
+            @endif
         </article>
     </header>
 </section>
